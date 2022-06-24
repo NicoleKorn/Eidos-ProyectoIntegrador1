@@ -2,8 +2,7 @@
 
 /* Fonts */
 /* Importar aquí la font */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador. 
@@ -11,30 +10,38 @@
 
 /* Reset */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* Para que el scrolleo en la one page sea suave */
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: #fbfbfb;
+	color: #0f0f0f;
 }
 
 /* Para quitar los puntos a los items de listas */
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 main {
-    max-width: 1200px;
-    margin: auto;
+	max-width: 1200px;
+	margin: auto;
 }
 
 /* Recomendaciones! 
@@ -54,3 +61,136 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+p {
+	margin: 20px 0;
+	line-height: 1.2;
+	font-size: 18px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	height: 90px;
+	width: 100%;
+	background-color: #fbfbfb;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 3px 5px;
+}
+
+ul#menu {
+	display: flex;
+	font-size: 20px;
+}
+
+li.menu-item a {
+	padding: 16px;
+	display: inline-block;
+}
+
+li.menu-item:hover {
+	background: rgba(175, 89, 158, 0.3);
+	transition: background-color 0, 3s;
+}
+
+/* main */
+
+section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
+	min-height: 100vh;
+	/* Lugar para el header */
+	padding-top: 90px;
+}
+
+article {
+	width: 50%;
+}
+
+#foto {
+	width: 400px;
+	border-radius: 50%;
+}
+
+.boton {
+	font-size: 20px;
+}
+
+.boton-cv {
+	background: #af599e;
+	padding: 10px 15px;
+	border-radius: 20px;
+	color: #fbfbfb;
+}
+
+.boton-cv:hover {
+	background: rgba(175, 89, 158, 0.8);
+	transition: background-color 0.3s;
+}
+
+.descripcion {
+	margin-bottom: 30px;
+}
+
+#Contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Contacto div {
+    margin: 20px;
+    width: 60vw;
+}
+
+.hablemos {
+    background-color: rgba(175, 89, 158, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales img {
+    width: 90px;
+    margin: 10px 6%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.redes-sociales img:hover {
+    background-color: rgba(175, 89, 158, 0.3);
+    transition: background-color 0.3s;
+}
+
+footer {
+    background-color: #af599e;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fbfbfb;
+    font-size: medium;
+}
