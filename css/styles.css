@@ -170,14 +170,15 @@ article {
     justify-content: center;
 }
 
-.redes-sociales img {
+.redes-sociales a img {
     width: 90px;
     margin: 10px 6%;
     padding: 10px;
     border-radius: 5px;
+	cursor: pointer;
 }
 
-.redes-sociales img:hover {
+.redes-sociales a img:hover {
     background-color: rgba(175, 89, 158, 0.3);
     transition: background-color 0.3s;
 }
